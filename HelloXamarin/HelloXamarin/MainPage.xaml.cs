@@ -9,9 +9,21 @@ namespace HelloXamarin
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+
+        public MainPage()
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            // ここに処理を書く
+            // Console.WriteLine(1);
+            // this.labelHelloWorld.text = "aaa";
+            
+            
+
+
+        }
+    }
 }

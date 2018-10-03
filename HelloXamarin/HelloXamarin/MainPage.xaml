@@ -2,13 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HelloXamarin"
-             x:Class="HelloXamarin.MainPage">
+             x:Class="HelloXamarin.MainPage"
+             Title="HelloXamrinTitle">
 
 	<!--<Label Text="Welcome to Xamarin.Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />-->
-    <Label Text="Hello, Xamarin!" TextColor="Aqua"
-         FontSize="Large" FontAttributes="Bold, Italic"
-         VerticalOptions="Center"
-         HorizontalOptions="Center" />
+    <!--<StackLayout>-->
+        <Label x:Name="label"
+        Text="Hello, Xamarin!"
+           TextColor="Aqua"
+            FontSize="Large"
+           FontAttributes="Bold, Italic"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+           />
+        <Button Text="Click me"
+                Clicked="Button_Clicked"/>
+    <!--</StackLayout>-->
 </ContentPage>
